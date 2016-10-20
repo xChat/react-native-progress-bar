@@ -1,11 +1,12 @@
-import React from 'react';
-import {
-    StyleSheet,
-    Text,
-    View,
-    Animated,
-    Easing,
-} from 'react-native';
+'use strict'
+
+import React, { Component } from 'react'
+import { 
+  Animated,
+  Easing,
+  StyleSheet,
+  View
+} from 'react-native'
 
 var styles = StyleSheet.create({
   background: {
@@ -31,7 +32,7 @@ var ProgressBar = React.createClass({
 
   getInitialState() {
     return {
-      progress: new Animated.Value(this.props.initialProgress || 0)
+      progress: new Animated.Value(0)
     };
   },
 
